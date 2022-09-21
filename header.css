@@ -1,0 +1,107 @@
+
+.header .header__middle li a{
+	color :white;
+	font-weight :bolder;
+}
+
+.header .header__right a{
+	color: white;
+	font-weight :bolder;
+}
+
+
+.header {
+	height: 5rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+}
+
+.header__middle {
+	display: flex;
+	align-items: center;
+	column-gap: 80px;
+}
+
+.header__left {
+	display: block;
+	overflow: hidden;
+	padding: 0 2rem;
+}
+
+.header__logo {
+	height: 100%;
+	width: 100%;
+	padding: 10px 0px 10px;
+}
+
+.header__right {
+	margin: auto 0;
+	margin-right: 1rem;
+}
+
+.header__nav__btn {
+	display: none;
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 1rem;
+	color: var(--secondary-color);
+	border-radius: 1.5rem;
+	text-transform: capitalize;
+	transition: background 0.3s linear;
+}
+
+.header__nav__btn:hover {
+	background: paleturquoise;
+}
+
+.header__nav__btn.menu__btn {
+	display: inline-block;
+}
+
+.header__middle .header__nav__btn {
+	margin-right: 2rem;
+}
+
+/* FOOTER ------------------------------------------------------------------------------------------ */
+
+.footer {
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer ul {
+	width: 80%;
+	margin: 2rem auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.footer ul li {
+	margin: 0 1rem;
+	margin-top: 1rem;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.footer ul li a {
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+}
+
+/* Section ------------------------------------------------------------------------------------------ */
+
+/* VARIABLE ---------------------------------------------------- */
+
+:root {
+	--primary-color: #181b21;
+	--secondary-color: #5c5d61;
+}

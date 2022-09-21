@@ -1,0 +1,90 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.heading{
+    font-size: 5em;
+    text-align: center;
+    margin-top: 125px;
+    color :white;
+    position: relative;
+}
+
+.top{
+    color: black;
+    font-weight: bold;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: crimson;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 2s linear infinite;
+}
+
+.container{
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content:center;
+}
+
+.image img{
+    width: 100%;
+}
+
+.player1{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2;
+    width: 95%;
+    margin-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.player1:hover{
+    background-color: white;
+
+}
+.top h1{
+    font-size: 1.5em;
+}
+.play1{
+    background-image: url(images/profile/sweden.webp);
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.player2{
+    background-image: url(images/profile/denmark.png);
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.player3{
+    background-image: url(images/profile/sweden.webp);
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.player4{
+    background-image: url(images/profile/sweden.webp);
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.player5{
+    background-image: url(simages/profile/sweden.webp);
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
